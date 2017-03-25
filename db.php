@@ -1,6 +1,6 @@
 <?PHP
 include('../secure_passwords.php');
-$db = new mysqli($db_ip,$db_username,$db_password,"scaffo");
+$db = new mysqli($db_ip,$db_username,$db_password,$db_dbname);
 
 // check connection
 if ($db->connect_errno) {
